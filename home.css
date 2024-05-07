@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+:after,
+:before {
+    margin:10px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #D9D9D9;
+    font-family: Istok Web;
+
+}
+
+aside,
+footer,
+header,
+main,
+section {
+    display: block;
+}
+
+
+
+@media screen and (min-width: 500px) { /* declaración de media query: de 640px hacia arriba */
+    .flex-container {
+        display: flex;
+    }
+}
+
+header{
+    font-size: 30px ;
+    text-align: center;
+    border-bottom: 1px solid #090140;
+}
+
+h1{
+    padding-left: 150px;
+}
+
+ul{
+    text-align: center;
+}
+
+.col1{
+    
+    flex: 1;
+    text-align: center;
+    align-items: end;
+}
+
+.col2{
+    flex: 0 1 10%;
+}
+
+
+.logo {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.franjas {
+    display: flex;
+    background-image: url(images/Home.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    align-items: center;
+    width: 100%;
+   min-height: 700px;
+   justify-content: center;
+   text-align: center;
+    font-size: 20px;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    margin: 0 100px;
+}
+.espimg{
+    width: 50px;
+    margin: 0 10px;
+}
+
+
+
+/*MENU-------------------------------*/
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+
+.navbar-links {
+    list-style: none;
+    font-family:Istok Web;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    text-align: center;
+}
+
+.navbar-links li {
+    padding-top: 10px;
+    margin: 0 15px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding-top: 20px;
+    
+    
+}
+
+.txtcenter{
+    text-align: center;
+}
+
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000000;
+    margin: 3px 0;
+    
+}
+
+@media (max-width: 768px) { /* media query: de 768px hacia abajo */
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 140px;
+        left: 0;
+        width:100%;
+        height: 30%;
+        background-color: #0f0273;
+        text-align: center;
+        padding-top: 20px;
+       }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+}
